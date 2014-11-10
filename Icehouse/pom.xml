@@ -50,7 +50,7 @@
             <plugin>
                 <groupId>com.rackspace.cloud.api</groupId>
                 <artifactId>clouddocs-maven-plugin</artifactId>
-                <version>1.2.0</version>
+                <version>1.0.8-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>goal1</id>
@@ -73,7 +73,7 @@
                         <phase>generate-sources</phase>
                         <configuration>
                             <!-- These parameters only apply to webhelp -->
-                            <enableDisqus>1</enableDisqus>
+                            <enableDisqus>0</enableDisqus>
                             <disqusShortname>openstackstarterdoc</disqusShortname>
                             <enableGoogleAnalytics>1</enableGoogleAnalytics>
                             <googleAnalyticsId>UA-17511903-6</googleAnalyticsId>
@@ -130,7 +130,7 @@
                         <goals>
                             <goal>generate-epub</goal>
                         </goals>
-                        <!--<phase>generate-sources</phase>-->
+                        <phase>generate-sources</phase>
                         <configuration>
                             <highlightSource>true</highlightSource>
                             <!-- The following elements sets the autonumbering of sections in output for chapter numbers but no numbered sections-->
